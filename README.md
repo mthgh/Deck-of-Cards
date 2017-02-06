@@ -22,17 +22,9 @@ Now, we will get samples for a new distribution. To obtain a single sample, shuf
 DescribeResult(nobs=1000L, minmax=(4, 30), mean=19.597000000000001, variance=28.042633633633635, skewness=-0.21009642649536145, kurtosis=-0.39057915448229785)
 25%, 50%, 75% percentile [ 16.  20.  23.]
 
-The central limit theorem states that if you have a population with mean μ and standard deviation σ and take sufficiently large random samples from the population with replacementtext annotation indicator, then the distribution of the sample means will be approximately normally distributed. This will hold true regardless of whether the source population is normal or skewed, provided the sample size is sufficiently large (usually n > 30). The resulting sum distribution is not idea normal, because the cards were drawn with replacement and the sample size is not large enough(only 3).
+The central limit theorem states that if you have a population with mean μ and standard deviation σ and take sufficiently large random samples from the population with replacementtext annotation indicator, then the distribution of the sample means will be approximately normally distributed. This will hold true regardless of whether the source population is normal or skewed, provided the sample size is sufficiently large (usually n > 30). The resulting sum distribution is normal distribution, becuase the sample sum was taken for more than 30 times and with replacement.
 
-## 4. Random Select Ten Card(with replacement), Compute Sum, and Sum Distribution
-Compared with point 3, now we draw ten cards from the deck, with replacement each time, compute the sum. The process was repeated multiple times.
-![Deck of Cards Value Distribution](https://github.com/mthgh/Deck-of-Cards/blob/master/exp2.png)
-DescribeResult(nobs=1000L, minmax=(33, 93), mean=65.347999999999999, variance=98.391287287287284, skewness=-0.14391374555169903, kurtosis=-0.15159369053423077)
-25%, 50%, 75% percentile [ 58.  65.  73.]
-
-Now, the distribution is more normal.
-
-## 5. Estimates
+## 4. Estimates
 Make some estimates about values you will get on future draws. Within what range will you expect approximately 90% of your draw values to fall? What is the approximate probability that you will get a draw value of at least 20? Make sure you justify how you obtained your values.
 
 From central limit theorem, for three card sum, 
