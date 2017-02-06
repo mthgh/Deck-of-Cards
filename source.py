@@ -50,8 +50,3 @@ def discribe_data(data, figname):
 ## draw three cards from deck of cards without replacement, compute sum and plot distribution
 exp1 = dist_of_sample_sum(1000)
 discribe_data(exp1, "exp1")
-
-## draw 10 cards from deck of cards with replacement, compute sum and plot distribution
-exp2 = dist_of_sample_sum(1000, m=10, replace=True)
-discribe_data(exp2, "exp2")
-
